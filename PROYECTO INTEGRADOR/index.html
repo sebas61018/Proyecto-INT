@@ -14,54 +14,119 @@
   </head>
 
   <body>
-
     <!-- nav de navegacion -->
     <div class="cabeza">
-
       <video autoplay loop muted plays-inline class="back_video">
-        <source src="video/pexels-artem-podrez-7048759.mp4" type="video/mp4">
+        <source src="video/pexels-artem-podrez-7048759.mp4" type="video/mp4" />
       </video>
 
       <nav class="nav_cabeza">
         <img src="imag/1231934.png" class="logo" />
         <ul>
           <li><a href="">Inicio</a></li>
-          <li><a href="">Quienes somos?</a></li>
+          <li><a href="informacion_quienes">Quienes somos?</a></li>
           <li><a href="">Beneficios</a></li>
           <li><a href="">Desarrollado</a></li>
         </ul>
       </nav>
 
-    <!-- informacion de incio -->
+      <!-- informacion de incio -->
       <div class="nombre_principal">
         <h1>Fid Recycling</h1>
-        <a href="">login</a>
       </div>
+    
+      <div class="container">
+        <a href="#" class="button" id="button">Login</a>
+      </div>
+
+      <div class="popup">
+        <div class="popup_content">
+          <img src="imag/error.png" alt="close" class="close">
+          <img src="imag/1231934.png" alt="logo" class="logoU">
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password">
+          <a href="#" class="button">Login</a>
+        </div>
+      </div>
+
     </div>
 
     <!-- informacion  -->
     <div class="informacio_1">
-      <h1>La producción de residuos casi se ha duplicado en los últimos 30 años, estamos transformando el planeta en un enorme cubo de basura, una manera para reducir la cantidad de residuos urbanos es el reciclaje.</h1>
+      <h1>
+        La producción de residuos casi se ha duplicado en los últimos 30 años,
+        estamos transformando el planeta en un enorme cubo de basura, una manera
+        para reducir la cantidad de residuos urbanos es el reciclaje.
+      </h1>
     </div>
 
-    <hr color="#b2dafa" width="100%" size="8px" align="center">
-
-     <!-- informacion Quienes somos -->
+    <!-- informacion Quienes somos -->
     <div class="informacion_quienes">
       <h1 class="h1_doc">Quienes somos?</h1>
       <div class="informacion_quienes_1">
-        <h2>Somos un grupo de ingenieros de sistemas que quieren solucionar el consumo excesivo del papel en la actualidad por esa razón nos dimos a la tarea de desarrollar esta plataforma para la diminución de dicho consumo y poder mejorar tanto a las personas como al planeta tierra el uso de este material  </h2>
-        <img src="imag/19362653.jpg" class="logo2">
+        <h2>
+          Somos un grupo de ingenieros de sistemas que quieren solucionar el
+          consumo excesivo del papel en la actualidad por esa razón nos dimos a
+          la tarea de desarrollar esta plataforma para la diminución de dicho
+          consumo y poder mejorar tanto a las personas como al planeta tierra el
+          uso de este material
+        </h2>
+        <img src="imag/19362653.jpg" class="logo2" />
       </div>
     </div>
 
-   <!-- informacion Beneficios -->
-
-   <div class="card">
-      <div class="face_front ">
-        <img src="imag/recy1.jpg" >
+    <!-- informacion Beneficios -->
+     <div class="body_card">
+      <div class="card">
+        <div class="face front">
+            <img src="imag/recy1.jpg" class="img_card">
+            <h3>Beneficios</h3>
+        </div>
+        <div class="face back">
+          <h3>Informacion</h3>
+          <p>
+            El sistema de código de barras convencional otorga un número que comparten todos los artículos iguales. 
+          </p>
+          <div class="link">
+            <a href="#">Detalles</a>
+          </div>
+        </div>
       </div>
-   </div>
+
+      <div class="card">
+        <div class="face front">
+            <img src="imag/recy2.jpg" class="img_card">
+            <h3>Beneficios</h3>
+        </div>
+        <div class="face back">
+          <h3>Informacion</h3>
+          <p>
+            A diferencia de otros métodos, ante grandes cantidades de stock el Sistema RFID recoge prácticamente todos los datos. 
+          </p>
+          <div class="link">
+            <a href="#">Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="face front">
+            <img src="imag/recy3.jpg" class="img_card">
+            <h3>Beneficios</h3>
+        </div>
+        <div class="face back">
+          <h3>Informacion</h3>
+          <p>
+             El Sistema RFID en cambio permite realizar la lectura a varios metros de distancia.
+          </p>
+          <div class="link">
+            <a href="#">Detalles</a>
+          </div>
+        </div>
+      </div>
+     </div>
 
   </body>
+
+  <script src="index.js"></script>
 </html>
