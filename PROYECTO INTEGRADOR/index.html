@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fid Recycling</title>
+    <link rel="icon" href="imag/1231934.png">
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +16,7 @@
 
   <body>
     <!-- nav de navegacion -->
-    <div class="cabeza">
+    <div id="cabeza" class="cabeza">
       <video autoplay loop muted plays-inline class="back_video">
         <source src="video/pexels-artem-podrez-7048759.mp4" type="video/mp4" />
       </video>
@@ -23,9 +24,9 @@
       <nav class="nav_cabeza">
         <img src="imag/1231934.png" class="logo" />
         <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="informacion_quienes">Quienes somos?</a></li>
-          <li><a href="">Beneficios</a></li>
+          <li><a href="#cabeza">Inicio</a></li>
+          <li><a href="#informacion_quienes">Quienes somos?</a></li>
+          <li><a href="#body_card">Beneficios</a></li>
           <li><a href="">Desarrollado</a></li>
         </ul>
       </nav>
@@ -43,16 +44,18 @@
         <div class="popup_content">
           <img src="imag/error.png" alt="close" class="close">
           <img src="imag/1231934.png" alt="logo" class="logoU">
-          <input type="text" placeholder="Username">
-          <input type="password" placeholder="Password">
-          <a href="#" class="button">Login</a>
+
+          <input type="text" id="Username" placeholder="Username" required>
+          <input type="password" id="Password" placeholder="Password" required>
+
+          <a href="#" class="button" onclick="consulta()">Login</a>
         </div>
       </div>
 
     </div>
 
     <!-- informacion  -->
-    <div class="informacio_1">
+    <div class="informacio_1" id="informacion_quienes">
       <h1>
         La producción de residuos casi se ha duplicado en los últimos 30 años,
         estamos transformando el planeta en un enorme cubo de basura, una manera
@@ -61,7 +64,7 @@
     </div>
 
     <!-- informacion Quienes somos -->
-    <div class="informacion_quienes">
+    <div  class="informacion_quienes">
       <h1 class="h1_doc">Quienes somos?</h1>
       <div class="informacion_quienes_1">
         <h2>
@@ -76,7 +79,7 @@
     </div>
 
     <!-- informacion Beneficios -->
-     <div class="body_card">
+     <div id="body_card" class="body_card">
       <div class="card">
         <div class="face front">
             <img src="imag/recy1.jpg" class="img_card">
@@ -128,5 +131,13 @@
 
   </body>
 
+
+  <!-- importacion de la base de datos -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  
+  <!-- importacion de javascript -->
   <script src="index.js"></script>
+  <script src="bs.js"></script>
 </html>
